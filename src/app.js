@@ -16,12 +16,16 @@ window.onload = function() {
     "during my lunch",
     "while I was praying"
   ];
-  let respuesta =
+
+  let p = document.getElementById("excuse");
+  p.innerHTML =
     who[getRndInteger(0, 3)] +
+    " " +
     action[getRndInteger(0, 3)] +
+    " " +
     what[getRndInteger(0, 2)] +
+    " " +
     when[getRndInteger(0, 3)];
-  console.log(respuesta);
 };
 
 function getRndInteger(min, max) {
